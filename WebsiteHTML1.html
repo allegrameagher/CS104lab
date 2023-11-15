@@ -155,6 +155,38 @@
        
        </div> 
 
-      
+      <h1> Javascript Variables</h1>
+      <p> In this example, x, y, and z are variables.</p>
+
+      <h1 id="demo" ></h1>
+      <script> 
+
+      let x = 5; 
+      let y = 6; 
+      let sum = x + y;
+      let difference = x - y;
+      let product = x * y;
+      console.log("Sum: " + sum);
+console.log("Difference: " + difference);
+console.log("Product: " + product); 
+
+      let score = 85;
+    if (score >= 90) { 
+        result = "ABC"; 
+        console.log("A grade");
+    } else if (score >= 80 && score<= 89) {
+        console.log("B grade");
+    } else if (score >= 70 && score<= 79) {
+        console.log("C grade");
+    } else if (score >= 60 && score<= 69) {
+        console.log("D grade");
+    } else {
+        console.log("F grade");
+    }
+    let z= x + y; 
+   document.getElementById("demo").innerHTML = 
+   "The Value of z is:" + z; 
+
+    </script>
 </body> 
 </html>
