@@ -188,5 +188,21 @@ console.log("Product: " + product);
    "The Value of z is:" + z; 
 
     </script>
+   
+<button id="changeTextBtn">Click Me!</button>
+<p id="displayText">Hello World</p>
+
+<script>
+    
+    var button = document.getElementById("changeTextBtn");
+    var paragraph = document.getElementById("displayText");
+
+    
+    button.addEventListener("click", function() {
+        
+        paragraph.innerHTML = "Hello, JavaScript World!";
+    });
+</script>
+
 </body> 
 </html>
