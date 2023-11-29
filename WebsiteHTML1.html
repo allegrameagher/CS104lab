@@ -204,5 +204,33 @@ console.log("Product: " + product);
     });
 </script>
 
+
+<form id="loginForm">
+    Username: <input type="text" id="username" name="username"><br>
+    Password: <input type="password" id="password" name="password"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (!username || !password) {
+            
+            alert("Error: Both username and password are required.");
+        } else {
+        
+            setTimeout(function() {
+                alert("Form submitted successfully!");
+                
+            }, 3000); 
+        }
+    });
+</script>
+
+
 </body> 
 </html>
